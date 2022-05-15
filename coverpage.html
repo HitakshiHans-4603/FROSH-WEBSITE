@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo selector</title>
+    <style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">header {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Lobster', cursive;
+        }
+
+
+        body {
+            background-color: black;
+            color: white;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 34px 23px;
+        }
+
+        section {
+            height: 550px;
+            margin: 2px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /*justify-content: center;*/
+            font-family: 'Lobster', cursive;
+            border: 2px solid white;
+            font-size:20px;
+            padding: 20px;
+        }
+
+
+
+        header::before {
+            background: url('https://cdn.wallpapersafari.com/22/25/GKqAwY.jpg') no-repeat center center fixed;
+            background-size:cover;
+            background-position: center;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        .navigation {
+            display: flex;
+            /*border: 3px solid white;*/
+            padding: 2px;
+            margin-top: auto;
+            height: 60px;
+            background-size: contain;
+            object-fit: cover;
+            align-items: center;
+
+        }
+
+        .navbar {
+
+            margin: 0px 0px;
+            font-size: 20px;
+
+
+            /*border:5px solid white;*/
+            /*margin: 2px;*/
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        a:hover {
+            color: rgb(31, 30, 30);
+            background-color: rgb(242, 234, 234);
+
+
+        }
+        h1{
+            text-shadow:3px 2px rgb(100, 98, 98);
+        }
+        .link{
+            border:2px solid white;
+            padding: 8px 8px;
+            border-radius: 50px;
+            background-color: rgb(240, 236, 231);
+            color:black;
+
+
+        }
+        .link:hover{
+            color:rgb(238, 228, 228);
+            background-color: rgb(100, 98, 98);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <header>
+            <ul class="navigation">
+                <a href="" target="_blank">
+                    <li>Home</li>
+                </a></a>
+                <a href="" target="_blank">
+                    <li>About</li>
+                </a>
+                <a href="" target="_blank">
+                    <li>Contact Us</li>
+                </a>
+                <a href="" target="_blank">
+                    <li>Services</li>
+                </a>
+            </ul>
+    </nav>
+    <section>
+        <h1>FROSH CARNIVAL</h1>
+        <p>Frosh carnival, a twirly ride of endless memories and electrifying experiences instilled with highs and lows that rekindles amongst us the childhood memories.
+
+            However, this ride of life never fails to overwhelm us with its unexpected and unfortunate turn of events. Yet, it is important to remember that, “After every dusk, there is a new dawn for us to shine brighter than ever before, like never before.</p><p>Though the carnival lights will always shine, once missed chances, can’t turn back time.
+
+            A place where you let your highs and lows guide you to the light of wisdom as you dance among the heights and dig deeper in the ocean, awaits for you.
+            
+            Frosh brings to you a roller coaster of exhilarating experiences and timeless memories, a ride to capture your hearts and resurrect your souls in the form of a powerful enigma of fun, frolic and laughter as we present to you the Frosh Carnival.</p>
+            <p>For Registration click on the link below</p>
+            <p><a href="loginpage.html" class="link">Register Now</a></p>
+    </section>
+
+</body>
+
+</html>
